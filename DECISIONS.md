@@ -18,3 +18,5 @@ CLAUDE.md came with the brief and is not repeated here.
 | 2026-11-18 | Accent colour (open decision 8, part 1) | `#EF5350` bright crimson. Contrast 5.6:1 on `#0d0d13` and 4.5:1 on `#1f2325` (WCAG AA for normal text on both). White text on it is only 3.5:1, so filled crimson buttons use dark text. |
 | 2026-11-18 | Fonts (open decision 8, part 2) | Mixed: blackletter (UnifrakturMaguntia, OFL) only in the logo image; Cormorant (`otf-cormorant`, extra) for window titles, the login screen and the boot menu; a plain sans for menus and body text. |
 | 2026-11-18 | Base palette (open decision 8, part 3) | Use the sampled colours as they are: `#0d0d13` window background, `#1f2325` panels, `#353943` borders, `#500d13` and `#371015` dark accents, `#EF5350` bright accent. |
+| 2026-11-18 | Local test VM | virt-manager (libvirt, `qemu:///system`), set up by `scripts/vm/setup-host.sh` and `scripts/vm/create-vm.sh`. |
+| 2026-11-18 | Local test VM RAM | 2 GiB by default (`scripts/vm/vm.conf`); Cathedral's target stays 1 GiB and the CI test still uses 1 GiB. |
