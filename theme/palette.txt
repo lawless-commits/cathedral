@@ -1,0 +1,10 @@
+# Cathedral palette (decided 2026-11-18, see DECISIONS.md).
+# Sampled from theme/wallpaper/knight.png, plus one bright accent.
+# Theme files should take their colours from here.
+background=#0d0d13   # near-black navy, window background
+panel=#1f2325        # charcoal, panels
+border=#353943       # steel grey, borders
+blood=#500d13        # blood red, dark accent
+blood_deep=#371015   # deep blood red
+accent=#EF5350       # bright crimson: text and icons (AA 5.6:1 on background, 4.5:1 on panel)
+accent_text=#0d0d13  # text on filled accent (white on #EF5350 is only 3.5:1)
