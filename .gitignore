@@ -1,0 +1,7 @@
+# Build output
+/out/
+/work/
+*.iso
+
+# Test output brought back from runners
+/test-results/
