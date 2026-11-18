@@ -1,0 +1,7 @@
+NAME="Cathedral"
+PRETTY_NAME="Cathedral"
+ID=cathedral
+ID_LIKE=arch
+BUILD_ID=rolling
+HOME_URL="https://github.com/lawless-commits/cathedral"
+BUG_REPORT_URL="https://github.com/lawless-commits/cathedral/issues"

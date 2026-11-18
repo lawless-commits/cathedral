@@ -1,0 +1,6 @@
+# Packages Cathedral adds on top of releng's list (base.x86_64).
+# The build joins every packages/*.x86_64 file into the profile's packages.x86_64.
+# Check each name with `pacman -Si <pkg>` before adding it.
+#
+# Milestone 1 (VM boot) adds nothing yet. The XFCE desktop goes in its own
+# list (desktop-xfce.x86_64) at milestone 2, so swapping desktops is one file.

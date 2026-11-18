@@ -1,0 +1,19 @@
+# remove from airootfs!
+# /usr/lib/os-release (which /etc/os-release links to) and /etc/issue belong to
+# the `filesystem` package, so the airootfs copy cannot replace them: it is
+# laid down before the packages are installed. This hook writes Cathedral's
+# versions after `filesystem` is installed. Like releng's other build hooks it
+# is deleted at the end of the build, so the live system never runs it.
+# An installed system will need a cathedral-release package instead.
+
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = filesystem
+
+[Action]
+Description = Writing Cathedral's os-release and issue...
+When = PostTransaction
+Depends = coreutils
+Exec = /bin/sh -c "cp /usr/share/cathedral/os-release /usr/lib/os-release && cp /usr/share/cathedral/issue /etc/issue"
